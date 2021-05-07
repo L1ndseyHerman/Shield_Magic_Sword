@@ -1,9 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+//import logo from './logo.svg';
+//import './App.css';
+//import React, { useState } from "react";
+//import styled from "styled-components";
+import React from "react";
+
+function clickMe() {
+  alert("You clicked me!");
+}
 
 function App() {
   return (
-    <div className="App">
+    <>
+      <div>
+        <button onClick={clickMe}>Button</button>
+      </div>
+    </>
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,7 +30,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 
