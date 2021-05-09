@@ -1,4 +1,4 @@
-
+import './App.css';
 import React from "react";
 
 //  This doesn't appear. Why not? 
@@ -74,15 +74,13 @@ function checkWinLooseTie(playerChoiceNumber, computerChoiceNumber)
 function App() 
 {
   return (
-    <>
-      <div>
-      <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a>
-        <button onClick={chooseRock}>Rock</button>
-        <button onClick={choosePaper}>Paper</button>
-        <button onClick={chooseScissors}>Scissors</button>
-        <p id="thePar">Try to beat the computer at Rock-Paper-Scissors.</p>
-      </div>
-    </>
+    <main>
+      <button onClick={chooseRock}>Rock</button>
+      <button onClick={choosePaper}>Paper</button>
+      <button onClick={chooseScissors}>Scissors</button>
+      <p id="thePar">Try to beat the computer at Rock-Paper-Scissors.</p>
+      <p>And check out <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a></p>
+    </main>
   );
 }
 
