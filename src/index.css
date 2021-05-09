@@ -26,13 +26,23 @@ button {
   /*background-color: peru;*/
   /*background-color: darkolivegreen;*/
   background-color: saddlebrown;
-  margin-left: 40%;
+  /*margin-left: 42%;*/
+  margin-left: auto;
+  margin-right: auto;
   width: 75px;
+  /*width: 15%;*/
+  /*margin-left: 40% + (width / 2);*/
 }
 
 p {
-  margin-left: 30%;
-  /*text-align: center;*/
+  /*margin-left: 30%;*/
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  font-style: italic;
+  font-size: 80%;
 }
 
 a {
@@ -44,5 +54,11 @@ main {
   /*background-color: plum;*/
   background-color: darkolivegreen;
   padding-bottom: 300px;
-  padding-top: 100px;
+  padding-top: 25px;
+}
+
+h1 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }

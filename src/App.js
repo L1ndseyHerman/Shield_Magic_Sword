@@ -74,13 +74,17 @@ function checkWinLooseTie(playerChoiceNumber, computerChoiceNumber)
 function App() 
 {
   return (
-    <main>
-      <button onClick={chooseRock}>Rock</button>
-      <button onClick={choosePaper}>Paper</button>
-      <button onClick={chooseScissors}>Scissors</button>
-      <p id="thePar">Try to beat the computer at Rock-Paper-Scissors.</p>
-      <p>And check out <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a></p>
-    </main>
+    <body>
+      <main>
+        <h1>Rock, Paper, Scissors</h1>
+        <button onClick={chooseRock}>Rock</button>
+        <button onClick={choosePaper}>Paper</button>
+        <button onClick={chooseScissors}>Scissors</button>
+        <p id="thePar">Try to beat the computer at Rock-Paper-Scissors.</p>
+        <p>And check out <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a>.</p>
+        <footer id="theFooter">Current PWA version is 1.0.0, updated 05/09/21</footer>
+      </main>
+    </body>
   );
 }
 
