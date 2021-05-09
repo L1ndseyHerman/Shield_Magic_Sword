@@ -76,6 +76,7 @@ function App()
   return (
     <>
       <div>
+      <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a>
         <button onClick={chooseRock}>Rock</button>
         <button onClick={choosePaper}>Paper</button>
         <button onClick={chooseScissors}>Scissors</button>
