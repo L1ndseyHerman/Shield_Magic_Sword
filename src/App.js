@@ -1,17 +1,17 @@
 import './App.css';
-import React from "react"; 
+import React, { useState } from 'react';
 
-function chooseRock() 
+/*function chooseRock() 
 {
   var computerNumber = chooseComputerRandomNumber();
   checkWinLooseTie(0, computerNumber);
-}
+}*/
 
-function choosePaper() 
+/*function choosePaper() 
 {
   var computerNumber = chooseComputerRandomNumber();
   checkWinLooseTie(1, computerNumber);
-}
+}*/
 
 function chooseScissors() 
 {
@@ -31,14 +31,23 @@ function checkWinLooseTie(playerChoiceNumber, computerChoiceNumber)
   if (playerChoiceNumber === 0 && computerChoiceNumber === 0)
   {
     document.querySelector("#thePar").textContent = "Player1 chose Rock and Computer chose Rock. Tie.";
+    /*return (
+      <p id="thePar">Player1 chose Rock and Computer chose Rock. Tie.</p>
+    );*/
   }
   else if (playerChoiceNumber === 0 && computerChoiceNumber === 1)
   {
     document.querySelector("#thePar").textContent = "Player1 chose Rock and Computer chose Paper. Computer wins!";
+    /*return (
+      <p id="thePar">Player1 chose Rock and Computer chose Paper. Computer wins!</p>
+    );*/
   }
   else if (playerChoiceNumber === 0 && computerChoiceNumber === 2)
   {
     document.querySelector("#thePar").textContent = "Player1 chose Rock and Computer chose Scissors. Player1 wins!";
+    /*return (
+      <p id="thePar">Player1 chose Rock and Computer chose Scissors. Player1 wins!</p>
+    );*/
   }
 
   else if (playerChoiceNumber === 1 && computerChoiceNumber === 0)
@@ -68,14 +77,26 @@ function checkWinLooseTie(playerChoiceNumber, computerChoiceNumber)
   }
 }
 
+/*function setUserChoice()
+{
+  const [count, setRock] = useState(0);
+  <p>You chose {count} times</p>
+}*/
+
 function App() 
 {
+
+  const [userChoice, setUserChoice] = useState(0);
+
   return (
     <main>  
       <h1>Rock-Paper-Scissors</h1>
-      <button onClick={chooseRock}>Rock</button>
-      <button onClick={choosePaper}>Paper</button>
+      <button onClick={() => setUserChoice(0)}>Rock</button>
+      <button onClick={() => setUserChoice(1)}>Paper</button>
       <button onClick={chooseScissors}>Scissors</button>
+      
+
+      <p>userChoice is {userChoice}</p>
       <p id="thePar">Try to beat the computer at Rock-Paper-Scissors.</p>
       <p>And check out <a id="aLink1" href="https://l1ndseyherman.github.io/">My Other Website</a>.</p>
       <footer id="theFooter">Current PWA version is 1.0.0, updated 05/10/21</footer>
