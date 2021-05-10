@@ -66,6 +66,14 @@ function checkWinLooseTie(userChoice, computerChoice)
 function App() 
 {
 
+  /*  
+    This only updates things if the state changes, bec useState.
+    For example, if you keep pressing the Rock button,
+    it will check "Is Rock === Rock?", and since it is, no computer number is generated, the DOM
+    doesn't update, etc. But if you press Paper, "Is Rock===Paper?" is false, and so the stuff updates.
+
+    To make Rock update every button press, do useEffect.
+  */
   const [userChoice, setUserChoice] = useState("An Error");
   var paragraphText = "";
 
